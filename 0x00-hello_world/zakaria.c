@@ -1,4 +1,4 @@
 #include <stdio.h>
 int main () {
-	int HACI=3;
-		printf("%i",HACI);}
+	int y=0;
+		printf("%i\n",y); }

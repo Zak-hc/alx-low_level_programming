@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc  fdwa.c -o fad 
+gcc  zakaria.c -o zakaria.s
