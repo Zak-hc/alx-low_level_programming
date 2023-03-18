@@ -9,11 +9,11 @@ int main(void)
 {int i;
 int j;
 int z;
-for (i = 0; i <= 7; i++)
+for (i = 0; i <= 7 ; i++)
 {
 for (j = 1; j <= 8 ; j++)
 {
-for (z = 1; z <= 8 ; z++)
+for (z = 1; z <= 9 ; z++)
 {
 if (i >= j || j >= z)
 continue;
