@@ -17,7 +17,7 @@ continue;
 putchar(i + '0');
 putchar(j + '0');
 putchar(',');
-if (i == 8 || j == 9)
+if (i == 8 && j == 9)
 break;
 putchar(' '); }}
 return (0); }
