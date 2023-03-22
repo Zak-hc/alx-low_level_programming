@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <positive_or_negative>
 /**
  * positive_or_negative - check it
  *
@@ -11,9 +10,9 @@
 void positive_or_negative(int n)
 {
 if (n < 0)
-printf("%i is negative\n", n);
+printf("%d is negative\n", n);
 if (n == 0)
-printf("%i is zero\n", n);
+printf("%d is zero\n", n);
 if (n > 0)
-printf("%i is positive\n", n);
+printf("%d is positive\n", n);
 }
