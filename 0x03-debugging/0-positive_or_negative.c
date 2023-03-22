@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main -Function of hhsdhj
+ * positive_or_negative - check it
+ *
+ * @i: check number 
  * Return: 0 (Success)
  */
 void positive_or_negative(int n)
