@@ -6,11 +6,11 @@
 
 int main(void)
 {
-        int y;
+int y;
 
-        y = 0;
+y = 0;
 
-        positive_or_negative(y);
+positive_or_negative(y);
 
-        return (0);
+return (0);
 }
