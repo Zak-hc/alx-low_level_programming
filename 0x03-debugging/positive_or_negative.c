@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <positive_or_negative>
 /**
  * positive_or_negative - check it
  *
  * @n: check number
  * Return: 0 (Success)
  */
-int positive_or_negative(void)
+void positive_or_negative(int)
 {
 int n;
 if (n < 0)
