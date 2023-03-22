@@ -4,12 +4,11 @@
 /**
  * positive_or_negative - check it
  *
- * @i: check number 
+ * @n: check number
  * Return: 0 (Success)
  */
 void positive_or_negative(int n)
 {
-srand(time(0));
 if (n < 0)
 printf("%i is negative\n", n);
 if (n == 0)
