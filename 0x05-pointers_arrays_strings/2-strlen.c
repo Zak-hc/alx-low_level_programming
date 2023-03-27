@@ -1,7 +1,7 @@
 /**
- * @s: is a var
+ * _strlen-var in 
  *
- * _strlen-var in 98
+ * @s[]: is a var
  *
  * Return: Always 0.
  */
