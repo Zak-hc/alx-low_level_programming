@@ -2,7 +2,9 @@
 /**
  * reset_to_98- check the codefff
  *
- * n is a var 
+ * n is a var
+ *
+ * n var
  *
  * Return: Always 0.
  */
