@@ -3,7 +3,7 @@
  *
  * @a: is a var
  *
- * @b: var in 
+ * @b: var in
  *
  * Return: Always 0.
  */
