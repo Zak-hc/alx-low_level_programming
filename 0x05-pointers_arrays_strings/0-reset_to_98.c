@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * reset_to_98- check the codeffff
+ * reset_to_98- check the codefff
+ *
+ * n is a var 
  *
  * Return: Always 0.
  */
