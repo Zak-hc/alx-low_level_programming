@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * _puts-var in
  *
  * @str: is a var
