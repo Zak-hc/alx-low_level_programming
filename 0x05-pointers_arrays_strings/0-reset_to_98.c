@@ -4,7 +4,7 @@
  *
  * n is a var
  *
- * n var
+ * n var in 98
  *
  * Return: Always 0.
  */
