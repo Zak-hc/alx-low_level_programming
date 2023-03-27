@@ -1,9 +1,9 @@
 /**
- * reset_to_98- check the codefff
+ * swap_int- check the codefff
  *
- * @n is a var
+ * @a: is a var
  *
- * @n: var in 98
+ * @b: var in 
  *
  * Return: Always 0.
  */
