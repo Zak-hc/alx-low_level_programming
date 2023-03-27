@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reset_to- check the code
+ * reset_to_98- check the codeffff
  *
  * Return: Always 0.
  */
