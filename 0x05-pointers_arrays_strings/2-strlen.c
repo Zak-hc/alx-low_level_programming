@@ -1,5 +1,5 @@
 /**
- * _strlen-var in 
+ * _strlen-var in
  *
  * @s: is a var
  *
