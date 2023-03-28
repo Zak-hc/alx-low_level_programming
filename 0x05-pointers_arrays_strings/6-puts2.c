@@ -1,5 +1,5 @@
 /**
- * _puts2-check the code
+ * puts2- check the code
  * @str: var in 98
  *
  * Return: Always 0.
