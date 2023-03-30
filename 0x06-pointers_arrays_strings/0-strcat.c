@@ -6,19 +6,17 @@
  * Return: the int converted from the string
  */
 
-
-
-
 char *_strcat(char *dest, char *src){
 int i;
 int j;
-char *z;
-for (i = 0; str[i] < '\0'; i++)
+for (i = 0; dest[i] != '\0'; i++)
 {
 }
-for(j = 0; dest[j] < '\0'; j++)
+for(j = 0; src[j] != '\0'; j++)
+{
+dest[i] = src[j];
+i++;
 }
-}
-z[]=dest[j]+str[i]
-return(z) ;
+dest[i] = '\0';
+return (dest);
 }
