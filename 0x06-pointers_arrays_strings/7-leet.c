@@ -6,19 +6,19 @@
  */
 char *leet(char *str)
 {
+int i;
 int j;
+char zalakiya[6] = "aeotl";
+char amjad[6] = "AEOTL";
+char fadwa[6] = "43071";
+
 for (j = 0; str[j] != '\0'; j++)
 {
-if (str[j] == 'a' || str[j] == 'A')
-str[j] = '4';
-else if (str[j] == 'e' || str[j] == 'E')
-str[j] = '3';
-else if (str[j] == 'o' || str[j] == 'O')
-str[j] = '0';
-else if (str[j] == 't' || str[j] == 'T')
-str[j] = '7';
-else if (str[j] == 'l' || str[j] == 'L')
-str[j] = '1';
+for (i = 0; zalakiya[i] != '\0'; i++)
+{
+if (str[j] == zalakiya[i] || str[j] == amjad[i])
+str[j] = fadwa[i];
+}
 }
 return (str);
 }
