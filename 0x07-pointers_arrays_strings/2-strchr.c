@@ -8,17 +8,9 @@
 char *_strchr(char *s, char c)
 {
 int v;
-int  find = 0;
-for (v = 0; s[v] != '\0'; v++)
+for (v=0; s[v] >= '\0'; v++)
 {
 if (s[v] == c)
-{
-find = 1;
-break;
-}
-}
-if(find == 1)
-{
 return (&s[v]);
 }
 return (0);
