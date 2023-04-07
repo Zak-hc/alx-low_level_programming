@@ -12,9 +12,10 @@ if (n < 0)
 {
 return (-1);
 }
-for (i = 1; i <= n; i++)
+while (i <= n)
 {
 ii *= i;
+i++;
 }
 return (ii);
 }
