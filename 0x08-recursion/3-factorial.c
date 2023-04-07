@@ -6,16 +6,17 @@
  */
 int factorial(int n)
 {
-int i;
-int ii;
 if (n < 0)
 {
 return (-1);
 }
-while (i <= n)
+if (n > 0)
 {
-ii *= i;
-i++;
+return (n * factorial(n - 1));
 }
-return (ii);
+if (n == 0)
+{
+return (1);
+}
+return (0);
 }
