@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - print the number 
+ * main- print the number
  * @argc: An argcounter
  * @argv: An argvalues
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
