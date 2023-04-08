@@ -1,14 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
-int y = 0;
+int y1;
+int y2;
 int i;
 for (i = 0; i < argc; i++)
-if (argc > 1)
+if (argc != 3)
 {
-y = y * atoi(argv[i]);
+printf("Error\n");
+return (1);
 }
-printf("%d\n", y);
+else 
+y1 = atoi(argv[1]);
+y2 = atoi(argv[2]);
+
+printf("%d\n", y1 * y2);
 return (0);
 }
