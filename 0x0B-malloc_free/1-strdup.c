@@ -12,6 +12,10 @@ int j;
 for (j = 0; str[j] != '\0'; j++)
 {
 }
+if (j == 0)
+{
+return (0);
+}
 z = malloc(sizeof(char) * j);
 if (z == NULL)
 {
