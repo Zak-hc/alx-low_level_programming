@@ -14,13 +14,14 @@ if (str == NULL)
 return (0);
 }
 for (j = 0; str[j] != '\0'; j++)
+{
 }
 z = malloc(sizeof(char) * (j + 1));
 if (z == NULL)
 {
 return (0);
 }
-for (i = 0; i < j; i++)
+for (i = 0; i <= j; i++)
 {
 z[i] = str[i];
 }
