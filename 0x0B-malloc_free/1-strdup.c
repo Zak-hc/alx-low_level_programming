@@ -12,11 +12,11 @@ int j;
 for (j = 0; str[j] != '\0'; j++)
 {
 }
-if (j == 0)
+if (str == NULL)
 {
 return (0);
 }
-z = malloc(sizeof(char) * j);
+z = malloc((sizeof(char) * j) + 1);
 if (z == NULL)
 {
 return (0);
