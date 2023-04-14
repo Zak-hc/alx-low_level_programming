@@ -1,13 +1,9 @@
 #include <stdlib.h>
-#include "main.h"
- /**
- * _calloc - allory for anf nments of size bytes
- * each and initzehe m to zero
+/**
+ * _calloc - hbbdhb ebhbwhbhwb
  * @nmemb: number ets in the array
  * @size: size ie array
- *
  * Return: pointcated memory or NULL if nmemb or size is 0 or
- * if malloc fails
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
