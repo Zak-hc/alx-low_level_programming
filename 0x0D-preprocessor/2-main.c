@@ -4,7 +4,7 @@ int main (void)
 {
 const char *s = __FILE__;
 int i;
-for (i = 0; i != '\0'; i++)
+for (i = 0; s[i] != '\0'; i++)
 {
 putchar (s[i]);
 }
