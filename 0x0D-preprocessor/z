@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "by me"
-git push que fait le header 
+git commit -m "by zack"
+git push 
