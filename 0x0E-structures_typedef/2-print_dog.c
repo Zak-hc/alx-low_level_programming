@@ -22,6 +22,7 @@ if (d == 0)
 {
 return;
 }
+else
 {
 printf("Name: %s\n", d->name);
 printf("Age: %f\n", d->age);
