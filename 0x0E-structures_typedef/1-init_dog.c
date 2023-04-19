@@ -8,14 +8,15 @@
  * @d: hjdjj
  *
  * Description: Longer description
+ * return : jdhhdhd 0 hdhhd
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 if (d == 0)
 {
-return ;
+return;
 }
 d->name = name;
 d->age = age;
-d->owner = owner;	
+d->owner = owner;
 }
