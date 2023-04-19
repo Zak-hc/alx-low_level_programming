@@ -10,17 +10,17 @@
  */
 void print_dog(struct dog *d)
 {
-if (d == 0)
+if (d->age == 0 || d->owner == 0)
 {
-return;
+printf("nil");
 }
 if (d->name == 0)
 {
 printf("Name: (nil)");
 }
-if (d->age == 0 || d->owner == 0)
+if (d == 0)
 {
-printf("nil");
+return;
 }
 {
 printf("Name: %s\n", d->name);
