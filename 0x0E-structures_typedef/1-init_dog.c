@@ -1,6 +1,7 @@
 #ifndef "_1_INIT_DOG_C_"
 #define "_1_INIT_DOG_C_"
 #include "dog.h"
+#include "stdio.h"
 /**
  * init_dog - a dog's basic info
  * @name: First member
