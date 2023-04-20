@@ -3,7 +3,7 @@
 /**
  * get_op_func - selects thet function to perform
  * the operation asked by t
- * @s: char 
+ * @s: char
  *
  * Return: pointnction that corresponds to the operator.
  */
