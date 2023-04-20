@@ -8,7 +8,7 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-size_t i;
+unsigned i;
 if ( array == 0 && action == 0)
 {
 return;
