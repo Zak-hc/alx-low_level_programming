@@ -25,7 +25,7 @@ if (separator == NULL)
 {
 continue;
 }
-else if (i < n-1)
+else if (i < n - 1)
 {
 printf("%s", separator);
 }
