@@ -21,7 +21,11 @@ for (i = 0; i < n; i++)
 {
 result = va_arg(b, int);
 printf("%d", result);
-if (separator != NULL && i < n - 1)
+if (separator == NULL)
+{
+continue;
+}
+else if (i < n-1)
 {
 printf("%s", separator);
 }
