@@ -20,12 +20,12 @@ return;
 for (i = 0; i < n; i++)
 {
 result = va_arg(b, int);
-_putchar('0' + result);
+printf("%d", result);
 if (separator != NULL && i < n - 1)
 {
 printf("%s", separator);
 }
-_putchar('\n');
-va_end(b);
 }
+printf("\n");
+va_end(b);
 }
