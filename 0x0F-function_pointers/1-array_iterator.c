@@ -5,6 +5,7 @@
  *@array: hjhjj
  *@size: yghgh
  *@action: ygghh
+ *return: fhhfhf 0 dhdh
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
