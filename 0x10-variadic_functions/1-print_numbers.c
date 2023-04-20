@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 /**
  *print_numbers- rrjrjrj
- *@*separator: jfjjjfjjf
+ *@separator: jfjjjfjjf
  *@n: jjf
  *Return: jjfjfjfjf 0 jfjfj
 */
