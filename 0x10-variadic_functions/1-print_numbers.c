@@ -13,10 +13,6 @@ va_list b;
 unsigned int i;
 int result;
 va_start(b, n);
-if (n == 0)
-{
-return;
-}
 for (i = 0; i < n; i++)
 {
 result = va_arg(b, int);
