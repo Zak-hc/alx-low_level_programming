@@ -13,21 +13,20 @@
  */
 size_t print_list(const list_t *z)
 {
-    size_t count = 0;
+size_t count = 0;
+while (z != NULL)
+{
+if (z->str == NULL)
+{
+printf("[0] (nil)\n");
+}
+else
+{
+printf("[%u] %s\n", z->len, z->str);
+}
+count++;
+z = z->next;
+}
 
-    while (z != NULL)
-    {
-        if (z->str == NULL)
-        {
-            printf("[0] (nil)\n");
-        }
-        else
-        {
-            printf("[%u] %s\n", z->len, z->str);
-        }
-        count++;
-        z = z->next;
-    }
-
-    return (count);
+return (count);
 }
