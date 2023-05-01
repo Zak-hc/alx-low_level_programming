@@ -16,6 +16,4 @@ while (ti != NULL)
 {
 free(ti);
 ti = ti->next;
-}
-return;
-}
+}}
