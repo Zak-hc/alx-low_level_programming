@@ -1,77 +1,69 @@
-#include <stdio.h>
-#include <stdarg.h>
-#include <stddef.h>
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
 #include "lists.h"
+
 /**
- * print_listint_safe - Prints a listint_t linked list.
- *                      Can handle linked lists with a loop.
+ * free_listp - frees a linked list
+ * @head: head of a list.
  *
- * @head: Pointer to the head of the list.
+ * Return: no return.
+ */
+void free_listp(listp_t **head)
+{
+	listp_t *temp;
+	listp_t *curr;
+
+	if (head != NULL)
+	{
+		curr = *head;
+		while ((temp = curr) != NULL)
+		{
+			curr = curr->next;
+			free(temp);
+		}
+		*head = NULL;
+	}
+}
+
+/**
+ * print_listint_safe - prints a linked list.
+ * @head: head of a list.
  *
- * Return: The number of nodes in the list.
+ * Return: number of nodes in the list.
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t count = 0;
-	const listint_t *slow, *fast;
+	size_t nnodes = 0;
+	listp_t *hptr, *new, *add;
 
-	if (head == NULL)
-		exit(98);
-
-	slow = head;
-	fast = head;
-
-	while (fast != NULL && fast->next != NULL)
+	hptr = NULL;
+	while (head != NULL)
 	{
-		printf("[%p] %d\n", (void *)slow, slow->n);
-		count++;
+		new = malloc(sizeof(listp_t));
 
-		slow = slow->next;
-		fast = fast->next->next;
+		if (new == NULL)
+			exit(98);
 
-		if (slow == fast)
+		new->p = (void *)head;
+		new->next = hptr;
+		hptr = new;
+
+		add = hptr;
+
+		while (add->next != NULL)
 		{
-			printf("[%p] %d\n", (void *)slow, slow->n);
-			count++;
-
-		/* Detect a loop */
-			break;
-		}
-	}
-
-	/* If the loop has been detected */
-	if (slow == fast)
-	{
-		slow = head;
-
-		while (slow != fast)
-		{
-			printf("[%p] %d\n", (void *)slow, slow->n);
-			count++;
-
-			slow = slow->next;
-			fast = fast->next;
+			add = add->next;
+			if (head == add->p)
+			{
+				printf("-> [%p] %d\n", (void *)head, head->n);
+				free_listp(&hptr);
+				return (nnodes);
+			}
 		}
 
-		printf("[%p] %d\n", (void *)slow, slow->n);
-		count++;
-
-		printf("-> [%p] %d\n", (void *)fast, fast->n);
-	}
-	/* If there is no loop */
-	else
-	{
-		while (slow != NULL)
-		{
-			printf("[%p] %d\n", (void *)slow, slow->n);
-			count++;
-
-			slow = slow->next;
-		}
+		printf("[%p] %d\n", (void *)head, head->n);
+		head = head->next;
+		nnodes++;
 	}
 
-	return (count);
+	free_listp(&hptr);
+	return (nnodes);
 }
