@@ -7,6 +7,7 @@
 #include "lists.h"
 /**
  * print_listint_safe - Prints a listint_t linked list.
+ *                      Can handle linked lists with a loop.
  *
  * @head: Pointer to the head of the list.
  *
@@ -36,10 +37,12 @@ size_t print_listint_safe(const listint_t *head)
 			printf("[%p] %d\n", (void *)slow, slow->n);
 			count++;
 
+		/* Detect a loop */
 			break;
 		}
 	}
 
+	/* If the loop has been detected */
 	if (slow == fast)
 	{
 		slow = head;
@@ -58,6 +61,7 @@ size_t print_listint_safe(const listint_t *head)
 
 		printf("-> [%p] %d\n", (void *)fast, fast->n);
 	}
+	/* If there is no loop */
 	else
 	{
 		while (slow != NULL)
