@@ -4,7 +4,7 @@
 /**
  * flip_bits - returns the number of bits you want
  * @n: first number of number
- * @m: second number of number 
+ * @m: second number of number
  * Return: the number of bits nffjfjeeded to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
