@@ -21,20 +21,17 @@ return (0);
 buf = malloc(letters + 1);
 if (buf == NULL)
 {
-close(fd);
 return (0);
 }
 n_read = read(fd, buf, letters);
 if (n_read == -1)
 {
-close(fd);
 free(buf);
 return (0);
 }
 n_written = write(STDOUT_FILENO, buf, n_read);
 if (n_written == -1 || (ssize_t)n_written != n_read)
 {
-close(fd);
 free(buf);
 return (0);
 }
