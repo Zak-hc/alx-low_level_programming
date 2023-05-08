@@ -21,6 +21,7 @@ return (0);
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 {
+free(buf);
 return (0);
 }
 n_read = read(fd, buf, letters);
