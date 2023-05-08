@@ -35,7 +35,7 @@ if (n_written == -1 || (ssize_t)n_written != n_read)
 free(buf);
 return (0);
 }
-close(fd);
 free(buf);
+close(fd);
 return (n_written);
 }
