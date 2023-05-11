@@ -17,10 +17,6 @@ if (errno == EEXIST)
 {
 fd = open(filename, O_WRONLY | O_TRUNC);
 }
-if (fd == -1)
-{
-return (-1);
-}
 if (text_content == NULL)
 {
 text_content = "";
