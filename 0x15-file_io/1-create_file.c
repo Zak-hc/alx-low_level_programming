@@ -13,7 +13,7 @@ if (filename == NULL)
 return (-1);
 }
 fd = open(filename, O_WRONLY | O_CREAT | O_EXCL, 0600);
-if (fd == -1 || errno == EEXIST)
+if (errno == EEXIST)
 {
 fd = open(filename, O_WRONLY | O_TRUNC);
 }
