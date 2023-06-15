@@ -19,7 +19,7 @@ return (0);
 while (h != 0)
 {
 count_nodes++;
-printf("%i\n",h->n);
+printf("%i\n", h->n);
 h = h->next;
 }
 return (count_nodes);
